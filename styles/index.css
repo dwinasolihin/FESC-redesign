@@ -1,0 +1,28 @@
+/*style.css*/
+body {
+  background-color: beige; }
+
+/* top navigation bar-------------------------------*/
+.top-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+.top-nav li {
+  float: right;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out; }
+
+.top-nav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black; }
+
+li a:hover {
+  background-color: #F8D7D0; }
+
+/*# sourceMappingURL=index.css.map */
