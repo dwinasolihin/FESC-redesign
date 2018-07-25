@@ -1,14 +1,15 @@
 /*style.css*/
 /*_colors.scss*/
 body {
-  background-color: beige; }
+  background-color: #D3D3D3; }
 
 /* top navigation bar-------------------------------*/
 .top-nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #F7F8FD; }
   .top-nav li {
     float: right;
     -webkit-transition: all 1s ease-out;
@@ -19,10 +20,11 @@ body {
       padding: 14px 16px;
       text-decoration: none;
       font-size: 20px;
-      color: black; }
+      color: #00001A; }
 
 li a:hover {
-  background-color: #F8D7D0; }
+  background-color: #283C93;
+  color: #F7F8FD; }
 
 /*footer section*/
 footer {

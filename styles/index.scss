@@ -12,6 +12,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: $nav-background;
 
     li {
       float: right;
@@ -23,13 +24,14 @@ body {
         padding: 14px 16px;
         text-decoration: none;
         font-size: 20px;
-        color: $nav-selector;
+        color: $text-color;
       }
     }
   }
 
   li a:hover {
     background-color: $nav-hover-background;
+    color: $nav-selector;
   }
 
   /*footer section*/
