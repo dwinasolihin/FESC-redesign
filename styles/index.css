@@ -1,7 +1,10 @@
 /*style.css*/
 /*_colors.scss*/
 body {
-  background-color: #D3D3D3; }
+  background-color: #E7EAF9; }
+
+.carousel-inner > .item > img {
+  margin: auto; }
 
 /* top navigation bar-------------------------------*/
 .top-nav {
@@ -21,15 +24,36 @@ body {
       text-decoration: none;
       font-size: 20px;
       color: #00001A; }
-
-li a:hover {
-  background-color: #283C93;
-  color: #F7F8FD; }
+  .top-nav li a:hover {
+    background-color: #283C93;
+    color: #F7F8FD; }
 
 /*footer section*/
 footer {
-  list-style-type: none; }
-  footer a {
-    display: block; }
+  background-color: #F7F8FD; }
+  footer .footer-uni-row {
+    width: 80%;
+    margin: 0px auto 0px;
+    padding: 40px 0px 0px 0px;
+    text-align: center; }
+    footer .footer-uni-row ul, footer .footer-uni-row li {
+      display: inline-block;
+      background-color: #F7F8FD;
+      width: 160px;
+      height: 70px;
+      margin: 4px;
+      border-style: inset;
+      border-width: 2px;
+      border-color: #283C93;
+      border-radius: 40px;
+      list-style-type: disc;
+      color: #F7F8FD; }
+    footer .footer-uni-row :hover {
+      background-color: #283C93;
+      color: #F7F8FD; }
+    footer .footer-uni-row p, footer .footer-uni-row ul, footer .footer-uni-row li {
+      font-family: Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 18px; }
 
 /*# sourceMappingURL=index.css.map */
