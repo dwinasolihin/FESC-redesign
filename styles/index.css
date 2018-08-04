@@ -1,51 +1,59 @@
-/*
-Error: Invalid CSS after "    padding:": expected expression (e.g. 1px, bold), was "}"
-        on line 10 of /Users/dwinasolihin/Desktop/HTML300/FESC-redesign/styles/index.scss
+/*style.css*/
+/*_colors.scss*/
+/*_grid.scss*/
+body {
+  background-color: #E7EAF9; }
 
-5: 
-6: body {
-7:     background-color: $background;
-8:     margin: 0;
-9:     padding: 
-10: }
-11: 
-12: .carousel-inner > .item > img{
-13:     margin: auto;
-14:   }
-15: /* top navigation bar-------------------------------*\/
+.carousel-inner > .item > img {
+  margin: auto; }
 
-Backtrace:
-/Users/dwinasolihin/Desktop/HTML300/FESC-redesign/styles/index.scss:10
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:723:in `assert_expr'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:68:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1134:in `sass_script'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:988:in `value!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:796:in `block in try_declaration'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `rethrow'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:809:in `try_declaration'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"    padding:\": expected expression (e.g. 1px, bold), was \"}\"\A         on line 10 of /Users/dwinasolihin/Desktop/HTML300/FESC-redesign/styles/index.scss\A \A 5: \A 6: body {\A 7:     background-color: $background;\A 8:     margin: 0;\A 9:     padding: \A 10: }\A 11: \A 12: .carousel-inner > .item > img{\A 13:     margin: auto;\A 14:   }\A 15: /* top navigation bar-------------------------------*/"; }
+/* top navigation bar-------------------------------*/
+.top-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F7F8FD; }
+  .top-nav li {
+    float: right;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out; }
+    .top-nav li a {
+      display: block;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #00001A; }
+  .top-nav li a:hover {
+    background-color: #283C93;
+    color: #F7F8FD; }
+
+/*footer section*/
+footer {
+  background-color: #F7F8FD; }
+  footer .footer-uni-row {
+    width: 80%;
+    margin: 0px auto 0px;
+    padding: 40px 0px 0px 0px;
+    text-align: center; }
+    footer .footer-uni-row ul, footer .footer-uni-row li {
+      display: inline-block;
+      background-color: #F7F8FD;
+      width: 160px;
+      height: 70px;
+      margin: 4px;
+      border-style: inset;
+      border-width: 2px;
+      border-color: #283C93;
+      border-radius: 40px;
+      list-style-type: disc;
+      color: #F7F8FD; }
+    footer .footer-uni-row :hover {
+      background-color: #283C93;
+      color: #F7F8FD; }
+    footer .footer-uni-row p, footer .footer-uni-row ul, footer .footer-uni-row li {
+      font-family: Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 18px; }
+/*# sourceMappingURL=index.css.map */
