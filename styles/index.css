@@ -2,7 +2,7 @@
 /*_colors.scss*/
 /*_grid.scss*/
 body {
-  background-color: #E7EAF9; }
+  background-color: #F7F8FD; }
 
 .carousel-inner > .item > img {
   margin: auto; }
@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #F7F8FD; }
+  background-color: #E7EAF9; }
   .top-nav li {
     float: right;
     -webkit-transition: all 1s ease-out;
@@ -29,31 +29,88 @@ body {
     background-color: #283C93;
     color: #F7F8FD; }
 
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  background-color: #E7EAF9;
+  border: 0.05rem solid #00001A;
+  -webkit-box-shadow: 0rem;
+          box-shadow: 0rem; }
+
+.marketing h2 {
+  font-weight: 400; }
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem; }
+
 /*footer section*/
 footer {
-  background-color: #F7F8FD; }
-  footer .footer-uni-row {
-    width: 80%;
+  background-color: #E7EAF9;
+  /* Clear floats (clearfix hack) */
+  /* Add a background color on hover */
+    /*
+    .footer-uni-row {
+      width: 90%;
+      margin: 0px auto 0px;
+      padding: 20px 0px 0px 0px;
+      text-align: center;
+
+        ul, li{
+        display: inline-block;
+        background-color: $accent-box;
+        width: 160px;
+        height: 70px;
+        margin: 4px;
+        border-style: inset;
+        border-width: 2px;
+        border-color: $text-select-color;
+        border-radius: 100px;
+        list-style-type: disc;
+        color: $text-select-color;
+
+        font-family: Verdana, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+
+        :hover {
+          background-color: $nav-selector;
+          color: $text-select-color;
+        }
+      }
+      :hover{
+        background-color: $nav-selector;
+        color: $text-select-color;
+      }
+    }
+    */ }
+  footer .btn-row {
+    width: 50%;
     margin: 0px auto 0px;
-    padding: 40px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
     text-align: center; }
-    footer .footer-uni-row ul, footer .footer-uni-row li {
-      display: inline-block;
-      background-color: #F7F8FD;
-      width: 160px;
-      height: 70px;
-      margin: 4px;
-      border-style: inset;
-      border-width: 2px;
-      border-color: #283C93;
-      border-radius: 40px;
-      list-style-type: disc;
-      color: #F7F8FD; }
-    footer .footer-uni-row :hover {
-      background-color: #283C93;
-      color: #F7F8FD; }
-    footer .footer-uni-row p, footer .footer-uni-row ul, footer .footer-uni-row li {
-      font-family: Verdana, Helvetica, sans-serif;
-      font-size: 14px;
-      line-height: 18px; }
+  footer .btn-row button {
+    background-color: #E7EAF9;
+    /* Background */
+    border: 1px solid #283C93;
+    /* Blue border */
+    color: #F7F8FD;
+    /* White text */
+    padding: 10px 24px;
+    /* Some padding */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    float: left;
+    /* Float the buttons side by side */
+    border-radius: 10rem; }
+  footer .btn-group:after {
+    content: "";
+    clear: both;
+    display: table; }
+  footer .btn-group button:not(:last-child) {
+    border-right: none;
+    /* Prevent double borders */ }
+  footer .btn-group button:hover {
+    background-color: #283C93;
+    color: #F7F8FD; }
 /*# sourceMappingURL=index.css.map */
