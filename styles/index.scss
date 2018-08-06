@@ -111,39 +111,4 @@ body {
       color: $text-select-color;
   }
 
-    /*
-    .footer-uni-row {
-      width: 90%;
-      margin: 0px auto 0px;
-      padding: 20px 0px 0px 0px;
-      text-align: center;
-
-        ul, li{
-        display: inline-block;
-        background-color: $accent-box;
-        width: 160px;
-        height: 70px;
-        margin: 4px;
-        border-style: inset;
-        border-width: 2px;
-        border-color: $text-select-color;
-        border-radius: 100px;
-        list-style-type: disc;
-        color: $text-select-color;
-
-        font-family: Verdana, Helvetica, sans-serif;
-        font-size: 14px;
-        line-height: 18px;
-
-        :hover {
-          background-color: $nav-selector;
-          color: $text-select-color;
-        }
-      }
-      :hover{
-        background-color: $nav-selector;
-        color: $text-select-color;
-      }
-    }
-    */
-  }
+}
