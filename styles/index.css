@@ -44,7 +44,21 @@ body {
   margin-right: .75rem;
   margin-left: .75rem; }
 
-/*footer section*/
+/* Featurettes ------------------------- */
+.featurette-divider {
+  margin: 2rem 0;
+  /* Space out the Bootstrap <hr> more */
+  width: 100%; }
+  .featurette-divider .col-md-7 .featurette-heading {
+    width: 10%; }
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem; }
+
+/*footer section -------------------------*/
 footer {
   background-color: #E7EAF9;
   /* Clear floats (clearfix hack) */
@@ -113,4 +127,5 @@ footer {
   footer .btn-group button:hover {
     background-color: #283C93;
     color: #F7F8FD; }
+
 /*# sourceMappingURL=index.css.map */
