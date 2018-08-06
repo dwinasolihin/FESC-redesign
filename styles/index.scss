@@ -54,7 +54,25 @@ body {
   margin-left: .75rem;
   }
 
-  /*footer section*/
+  /* Featurettes ------------------------- */
+
+.featurette-divider {
+  margin: 2rem 0; /* Space out the Bootstrap <hr> more */
+  width: 100%;
+
+  .col-md-7 .featurette-heading {
+    width: 10%;
+  }
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+  /*footer section -------------------------*/
   footer {
     background-color: $accent-box;
 
