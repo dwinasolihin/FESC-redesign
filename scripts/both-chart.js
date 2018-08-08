@@ -1,27 +1,61 @@
 //consumption & production column chart
-function onDOMLoad (){
-    console.log("I am the first step, I should load google chart library")
+//1.Google chart library loaded
+//2.DOMContentLoaded
+//3.get data from API
+//4.Data received from API
+//5.Draw chart
+
+
+
+
+
+//4114afcc8b3e54887b3028765514ab5b
+function onDOMLoad(){
+    console.log("I am the first step, I should load google chart library") //1
     google.charts.load('current', {'packages':['bar']});
-    google.charts.setOnLoadCallback(getData());
+    google.charts.setOnLoadCallback(getData);
 }
-document.addEventListener("DOMContentLoaded", onDOMLoad())
+
+document.addEventListener("DOMContentLoaded", onDOMLoad()) //2
 
 function getData(){
-    console.log("Getting data! (Step 3)")
-    //Get data here
-    drawChartBar();
+    console.log("Getting data is the third step! ")
+
+    let request = new XMLHttpRequest()
+    let requestUrl = "http://api.eia.gov/series/?api_key=4114afcc8b3e54887b3028765514ab5b&series_id=SEDS.REPRB.FL.A" //3
+    request.open('GET', requestUrl, true)
+
+    request.onload = function(){
+
+      if(request.status !== 200){
+        console.log("Something went wrong: ", request)
+        return
+      }
+
+      let responseVar = JSON.parse(request.response)
+      console.log(responseVar.series[0].data)
+      drawChartBar(responseVar.series[0].data)
+    }
+
+    // Callback for when there's an error
+    request.error = function(err){
+        console.log("error is: ", err)
+    }
+
+    // Send the request to the specified URL
+    request.send()
+
 }
 
 
-      function drawChartBar() {
-        var data = new google.visualization.arrayToDataTable([
-          ['Year', 'Renewable Energy Production', 'Total Electricity Consumption'],
-          ['2010', 49550, 788887],
-          ['2015', 51489, 803865]
-        ]);
+      function drawChartBar(freshData) {
+        var data = new google.visualization.DataTable()
+        data.addColumn('string', 'Year');
+        data.addColumn('number', 'Renewable Energy Production');
+        data.addRows(freshData);
 
         var options = {
-            title: 'Renewable Energy Production vs. Total Electricity Consumption',
+            title: 'Renewable Energy Production in Florida from 1960 to 2015',
             chartArea: {width: '50%'},
             hAxis: {
               title: 'Year',
@@ -32,14 +66,7 @@ function getData(){
             }
           };
 
-        var chart = new google.charts.Bar(document.getElementById('barchart-material-60s'));
-
-        chart.draw(data, google.charts.Bar.convertOptions(options));
+          var chart = new google.charts.Bar(document.getElementById('barchart-material-60s'));
+          chart.draw(data, google.charts.Bar.convertOptions(options));
       }
 
-      //3.get data from API
-      //5.draw chart
-
-      //1.DOMContentLoaded
-      //2.Google chart library loaded
-      //4.Data received from API

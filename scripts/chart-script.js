@@ -1,5 +1,5 @@
 //chart-script.js
-//4114afcc8b3e54887b3028765514ab5b
+
 //-----------------------------------------------------------------------
     google.charts.load('current', {'packages':['corechart']});
     google.charts.setOnLoadCallback(drawChartLine);
