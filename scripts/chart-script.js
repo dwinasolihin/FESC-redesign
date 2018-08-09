@@ -1,5 +1,5 @@
 //chart-script.js
-
+/*
 //-----------------------------------------------------------------------
     google.charts.load('current', {'packages':['corechart']});
     google.charts.setOnLoadCallback(drawChartLine);
@@ -149,3 +149,4 @@
     var chart = new google.visualization.LineChart(document.getElementById('line-chart2'));
     chart.draw(data, options);
   }
+  */
