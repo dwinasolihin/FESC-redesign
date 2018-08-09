@@ -33,8 +33,23 @@ function getData(){
       }
 
       let responseVar = JSON.parse(request.response)
-      console.log(responseVar.series[0].data)
-      drawChartBar(responseVar.series[0].data)
+
+        //printing info from end of array
+        console.log("first print", responseVar.series[0].data)
+        let chartArray = responseVar.series[0].data
+        chartArray.sort(sortFunction)
+        function sortFunction(a, b){
+            if (a[0] === b[0]){
+                return 0;
+            } else {
+                return (a[0] < b[0]) ? -1: 1
+            }
+        }
+
+        console.log ("second print", chartArray)
+
+        //console.log(copyOfArray)
+        drawChartBar(chartArray)
     }
 
     // Callback for when there's an error
@@ -53,6 +68,7 @@ function getData(){
         data.addColumn('string', 'Year');
         data.addColumn('number', 'Renewable Energy Production');
         data.addRows(freshData);
+
 
         var options = {
             title: 'Renewable Energy Production in Florida from 1960 to 2015',
