@@ -93,4 +93,9 @@ footer {
     background-color: #283C93;
     color: #F7F8FD; }
 
+/*Chart styling*/
+#production-chart, #consumption-chart {
+  width: 1000px;
+  height: 500px; }
+
 /*# sourceMappingURL=index.css.map */
