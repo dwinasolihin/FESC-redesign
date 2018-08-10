@@ -1,100 +1,42 @@
-/*style.css*/
-/*_colors.scss*/
-/*_grid.scss*/
-body {
-  background-color: #F7F8FD; }
+/*
+Error: Invalid CSS after "<<<<<<< HEAD": expected "{", was "}"
+        on line 116 of /Users/dwinasolihin/Desktop/HTML300/FESC-redesign/styles/index.scss
 
-.carousel-inner > .item > img {
-  margin: auto; }
+111:       color: $text-select-color;
+112:   }
+113: }
+114: 
+115: <<<<<<< HEAD
+116: }
+117: 
+118: #production-chart, #consumption-chart {
+119:   width: 1000px;
+120:   height: 500px;
+121: =======
 
-/* top navigation bar-------------------------------*/
-.top-nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #E7EAF9; }
-  .top-nav li {
-    float: right;
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out; }
-    .top-nav li a {
-      display: block;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 20px;
-      color: #00001A; }
-  .top-nav li a:hover {
-    background-color: #283C93;
-    color: #F7F8FD; }
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  background-color: #E7EAF9;
-  border: 0.05rem solid #00001A;
-  -webkit-box-shadow: 0rem;
-          box-shadow: 0rem; }
-
-.marketing h2 {
-  font-weight: 400; }
-
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem; }
-
-/* Featurettes ------------------------- */
-.featurette-divider {
-  margin: 2rem 0;
-  /* Space out the Bootstrap <hr> more */
-  width: 100%; }
-  .featurette-divider .col-md-7 .featurette-heading {
-    width: 10%; }
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem; }
-
-/*footer section -------------------------*/
-footer {
-  background-color: #E7EAF9;
-  /* Clear floats (clearfix hack) */
-  /* Add a background color on hover */ }
-  footer .btn-row {
-    width: 50%;
-    margin: 0px auto 0px;
-    padding: 20px 0px 0px 0px;
-    text-align: center; }
-  footer .btn-row button {
-    background-color: #E7EAF9;
-    /* Background */
-    border: 1px solid #283C93;
-    /* Blue border */
-    color: #F7F8FD;
-    /* White text */
-    padding: 10px 24px;
-    /* Some padding */
-    cursor: pointer;
-    /* Pointer/hand icon */
-    float: left;
-    /* Float the buttons side by side */
-    border-radius: 10rem; }
-  footer .btn-group:after {
-    content: "";
-    clear: both;
-    display: table; }
-  footer .btn-group button:not(:last-child) {
-    border-right: none;
-    /* Prevent double borders */ }
-  footer .btn-group button:hover {
-    background-color: #283C93;
-    color: #F7F8FD; }
-
-#production-chart, #consumption-chart {
-  width: 1000px;
-  height: 500px; }
-
-/*# sourceMappingURL=index.css.map */
+Backtrace:
+/Users/dwinasolihin/Desktop/HTML300/FESC-redesign/styles/index.scss:116
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"<<<<<<< HEAD\": expected \"{\", was \"}\"\A         on line 116 of /Users/dwinasolihin/Desktop/HTML300/FESC-redesign/styles/index.scss\A \A 111:       color: $text-select-color;\A 112:   }\A 113: }\A 114: \A 115: <<<<<<< HEAD\A 116: }\A 117: \A 118: #production-chart, #consumption-chart {\A 119:   width: 1000px;\A 120:   height: 500px;\A 121: ======="; }
