@@ -81,7 +81,7 @@ footer {
     /* Pointer/hand icon */
     float: left;
     /* Float the buttons side by side */
-    border-radius: 10rem; }
+    border-radius: 1rem; }
   footer .btn-group:after {
     content: "";
     clear: both;
@@ -95,7 +95,7 @@ footer {
 
 /*Chart styling*/
 #production-chart, #consumption-chart {
-  width: 1000px;
-  height: 500px; }
+  width: 500px;
+  height: 300px; }
 
 /*# sourceMappingURL=index.css.map */
