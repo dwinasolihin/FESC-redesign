@@ -2,46 +2,30 @@
 /*_colors.scss*/
 /*_grid.scss*/
 body {
-  background-color: #F7F8FD; }
+  background-color: #F7F8FD;
+  margin: 2px; }
 
 .carousel-inner > .item > img {
   margin: auto; }
 
-/* top navigation bar-------------------------------
-.top-nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: $accent-box;
+h1 h2 h3 h4 h5 h6 {
+  font-family: 'Lato', sans-serif; }
 
-  li {
-    float: right;
-    transition: all 1s ease-out;
+p {
+  font-family: 'Roboto', sans-serif; }
 
-    a {
-      display: block;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 20px;
-      color: $text-color;
-    }
-  }
-  li a:hover {
-    background-color: $nav-selector;
-    color: $text-select-color;
-  }
-}
-*/
+#logo-home img {
+  height: 5%;
+  width: 25%; }
+
 .topnav {
   overflow: hidden;
-  background-color: #E7EAF9; }
+  background-color: #b3b3b7; }
 
 .topnav a {
   float: left;
   display: block;
-  color: #00001A;
+  color: #F7F8FD;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -111,38 +95,8 @@ body {
 
 /*footer section -------------------------*/
 footer {
-  background-color: #E7EAF9;
-  /* Clear floats (clearfix hack) */
-  /* Add a background color on hover */ }
-  footer .btn-row {
-    width: 50%;
-    margin: 0px auto 0px;
-    padding: 20px 0px 0px 0px;
-    text-align: center; }
-  footer .btn-row button {
-    background-color: #E7EAF9;
-    /* Background */
-    border: 1px solid #283C93;
-    /* Blue border */
-    color: #F7F8FD;
-    /* White text */
-    padding: 10px 24px;
-    /* Some padding */
-    cursor: pointer;
-    /* Pointer/hand icon */
-    float: left;
-    /* Float the buttons side by side */
-    border-radius: 1rem; }
-  footer .btn-group:after {
-    content: "";
-    clear: both;
-    display: table; }
-  footer .btn-group button:not(:last-child) {
-    border-right: none;
-    /* Prevent double borders */ }
-  footer .btn-group button:hover {
-    background-color: #283C93;
-    color: #F7F8FD; }
+  background-color: #b3b3b7;
+  color: #F7F8FD; }
 
 /*Chart styling*/
 #production-chart, #consumption-chart {
