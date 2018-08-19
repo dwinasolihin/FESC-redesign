@@ -14,6 +14,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
+        <!-- development version, includes helpful console warnings -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="scripts/nav.js"></script>
+
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script src="scripts/chart-script.js"></script>
 
@@ -26,14 +30,28 @@
 
     <body>
         <header>
-                <div class="topnav" id="myTopnav">
-                        <a id="logo" class="py-2" href="https://dwinasolihin.github.io/FESC-redesign/"><img width="100" height="38" src="images/header-logo.png" alt="FESC logo"></a>
-                        <a href="index.html">Home</a>
-                        <a href="research.html">Our Research</a>
-                        <a href="data.html">Data Visualization</a>
-                        <a href="contact.html">Contact Us</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+            <!--Navigation bar
+            <div class="topnav" id="myTopnav">
+                <a id="logo" class="py-2" href="https://dwinasolihin.github.io/FESC-redesign/"><img width="100" height="38" src="images/header-logo.png" alt="FESC logo"></a>
+                <a href="index.html">Home</a>
+                <a href="research.html">Our Research</a>
+                <a href="data.html">Data Visualization</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+            </div>
+            -->
+            <!--Logo banner-->
+            <h1 id="logo-header">
+                    <a id="logo-home" class="py-2" href="https://dwinasolihin.github.io/FESC-redesign/"><img src="images/header-logo.png" alt="FESC logo"></a>
+
+                    Bringing Energy Solutions to Florida, the Nation, and the World
+            </h1>
+            <!--Vue.js implementation of navigation bar-->
+            <div id="topnav">
+                    <div class="page"  v-for="page in pages">
+                        <a v-bind:href="page.urlSrc">{{page.title}}</a>
                     </div>
+            </div>
         </header>
 
 
@@ -46,103 +64,80 @@
         <section class="container marketing">
             <section class="row">
                 <div class="col-lg-4">
-                    <img class="rounded-circle" src="#" alt="placeholder image" width="140" height="140">
-                    <h2>Overarching - Understanding Florida's Energy Systems </h2>
+                    <h3>Overarching - Understanding Florida's Energy Systems </h3>
                     <p>
                         <a class="btn btn-secondary" href="http://floridaenergy.ufl.edu/energy-research/by-research-area/thrust-1-overarching/" role="button">Overarching</a>
                     </p>
                 </div>
 
                 <div class="col-lg-4">
-                    <img class="rounded-circle" src="#" alt="placeholder image" width="140" height="140">
-                    <h2>Efficiency</h2>
+                    <h2>Efficiency - Enhancing Energy Efficiency and Conservation</h2>
                     <p>
-                        <a class="btn btn-secondary" href="#" role="button">Placeholder</a>
+                        <a class="btn btn-secondary" href="http://floridaenergy.ufl.edu/energy-research/by-research-area/thrust-2-efficiency/" role="button">Efficiency</a>
                     </p>
                 </div>
 
                 <div class="col-lg-4">
-                    <img class="rounded-circle" src="#" alt="placeholder image" width="140" height="140">
-                    <h2>Biomass</h2>
+                    <h2>Biomass - Developing Florida’s Biomass Resources</h2>
                     <p>
-                        <a class="btn btn-secondary" href="#" role="button">Placeholder</a>
+                        <a class="btn btn-secondary" href="http://floridaenergy.ufl.edu/energy-research/by-research-area/thrust-3-biomass/" role="button">Biomass</a>
                     </p>
                 </div>
             </section>
 
             <section class="row">
                 <div class="col-lg-4">
-                    <img class="rounded-circle" src="#" alt="placeholder image" width="140" height="140">
-                    <h2>Solar</h2>
+                    <h2>Solar - Harnessing Florida’s Solar Resources</h2>
                     <p>
-                        <a class="btn btn-secondary" href="#" role="button">Placeholder</a>
+                        <a class="btn btn-secondary" href="http://floridaenergy.ufl.edu/energy-research/by-research-area/thrust-4-solar/" role="button">Solar</a>
                     </p>
                 </div>
 
                 <div class="col-lg-4">
-                    <img class="rounded-circle" src="#" alt="placeholder image" width="140" height="140">
-                    <h2>Carbon Capture and Nuclear</h2>
+                    <h2>Carbon Capture and Nuclear - Ensuring Nuclear Energy &amp; Carbon Constrained Technologies for Electric Power</h2>
                     <p>
-                        <a class="btn btn-secondary" href="#" role="button">Placeholder</a>
+                        <a class="btn btn-secondary" href="http://floridaenergy.ufl.edu/energy-research/by-research-area/thrust-5-nuclear/" role="button">Carbon/Nuclear</a>
                     </p>
                 </div>
 
                 <div class="col-lg-4">
-                    <img class="rounded-circle" src="#" alt="placeholder image" width="140" height="140">
-                    <h2>Ocean Energy</h2>
+                    <h2>Ocean Energy - Exploring Florida’s Ocean Energy Resources</h2>
                     <p>
-                        <a class="btn btn-secondary" href="#" role="button">Placeholder</a>
+                        <a class="btn btn-secondary" href="http://floridaenergy.ufl.edu/energy-research/by-research-area/thrust-6-ocean-energy/" role="button">Ocean Energy</a>
                     </p>
                 </div>
             </section>
 
             <section class="row">
                 <div class="col-lg-4">
-                    <img class="rounded-circle" src="#" alt="placeholder image" width="140" height="140">
-                    <h2>Storage and Delivery</h2>
+                    <h2>Storage and Delivery - Securing our Energy Storage and Delivery Infrastructure</h2>
                     <p>
-                        <a class="btn btn-secondary" href="#" role="button">Placeholder</a>
+                        <a class="btn btn-secondary" href="http://floridaenergy.ufl.edu/energy-research/by-research-area/thrust-7-storage-delivery/" role="button">Storage and Delivery</a>
                     </p>
                 </div>
                 <div class="col-lg-4">
-                    <img class="rounded-circle" src="#" alt="placeholder image" width="140" height="140">
-                    <h2>Policy</h2>
+                    <h2>Policy and Other Projects</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                        <a class="btn btn-secondary" href="#" role="button">Placeholder</a>
+                        <a class="btn btn-secondary" href="http://floridaenergy.ufl.edu/energy-research/by-research-area/policy-other/" role="button">Policy</a>
                     </p>
                 </div>
                 <div class="col-lg-4">
-                    <img class="rounded-circle" src="#" alt="placeholder image" width="140" height="140">
-                    <h2>Education and Outreach</h2>
+                    <h2>Education and Outreach Projects</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                        <a class="btn btn-secondary" href="#" role="button">Placeholder</a>
+                        <a class="btn btn-secondary" href="http://floridaenergy.ufl.edu/energy-research/by-research-area/education-and-outreach/" role="button">Education and Outreach</a>
                     </p>
                 </div>
             </section>
             </section>
         </section>
 
-        <!--TODO: Footer. Same information just different colors and layout-->
-        <!--Blue background with icons of all 12 universities with links to their homepage-->
+        <!--Simple footer-->
         <footer>
-
                 <div id="copyright">
-                        <p align= "center">&nbsp;&nbsp;&nbsp;<a href="">Contact Us</a> | <a href="">Site Map</a></p>
-                        <p align="center">Copyright &copy; 2008-2015 Florida Energy Systems Consortium. </p>
-                        <p align= "center">All Rights Reserved. </p>
-                    </div>
+                    <p align="center">&nbsp;&nbsp;&nbsp;<a href="contact.html">Contact Us</a> | <a href="#">Site Map</a></p>
+                    <p align="center">Copyright &copy; 2018 Florida Energy Systems Consortium. </p>
+                    <p align="center">All Rights Reserved. </p>
+                </div>
             </section>
         </footer>
     </body>

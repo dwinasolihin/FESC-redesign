@@ -8,21 +8,24 @@ body {
 .carousel-inner > .item > img {
   margin: auto; }
 
+/*Styling for overall all elements used in pages*/
 h1 h2 h3 h4 h5 h6 {
   font-family: 'Lato', sans-serif; }
 
 p {
   font-family: 'Roboto', sans-serif; }
 
+/*For the logo image on home page*/
 #logo-home img {
   height: 5%;
   width: 25%; }
 
-.topnav {
+/*Navigation styling*/
+#topnav {
   overflow: hidden;
   background-color: #b3b3b7; }
 
-.topnav a {
+#topnav a {
   float: left;
   display: block;
   color: #F7F8FD;
@@ -31,7 +34,7 @@ p {
   text-decoration: none;
   font-size: 17px; }
 
-.topnav a:hover {
+#topnav a:hover {
   background-color: #283C93;
   color: #F7F8FD; }
 
@@ -39,28 +42,28 @@ p {
   background-color: #F7F8FD;
   color: #00001A; }
 
-.topnav .icon {
+#topnav .icon {
   display: none; }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .top-nav a:not(:first-child) {
+  #top-nav a:not(:first-child) {
     display: none; }
 
-  .top-nav a.icon {
+  #top-nav a.icon {
     float: right;
     display: block; } }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .top-nav.responsive {
+  #top-nav.responsive {
     position: relative; }
 
-  .top-nav.responsive a.icon {
+  #top-nav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0; }
 
-  .top-nav.responsive a {
+  #top-nav.responsive a {
     float: none;
     display: block;
     text-align: left; } }
@@ -102,5 +105,14 @@ footer {
 #production-chart, #consumption-chart {
   width: 500px;
   height: 300px; }
+
+/*Contact styling*/
+.address {
+  display: block;
+  position: relative;
+  text-align: center; }
+
+.contact-form {
+  border-color: 1px #00001A; }
 
 /*# sourceMappingURL=index.css.map */

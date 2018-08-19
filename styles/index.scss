@@ -12,6 +12,8 @@ body {
     margin: auto;
   }
 
+//---------------------------------------------------------------------------------------------------------------
+/*Styling for overall all elements used in pages*/
 h1 h2 h3 h4 h5 h6 {
   font-family: 'Lato', sans-serif;
 }
@@ -20,18 +22,21 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
+//---------------------------------------------------------------------------------------------------------------
+/*For the logo image on home page*/
 #logo-home img{
   height: 5%;
   width: 25%;
 }
 
-
-.topnav {
+//---------------------------------------------------------------------------------------------------------------
+/*Navigation styling*/
+#topnav {
   overflow: hidden;
   background-color: #b3b3b7;
 }
 
-.topnav a {
+#topnav a {
   float: left;
   display: block;
   color: $text-select-color;
@@ -42,7 +47,7 @@ p {
 
 }
 
-.topnav a:hover {
+#topnav a:hover {
   background-color: $nav-selector;
   color: $text-select-color;
 }
@@ -52,14 +57,15 @@ p {
   color: $text-color;
 }
 
-.topnav .icon {
+#topnav .icon {
   display: none;
 }
 
+//---------------------------------------------------------------------------------------------------------------
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .top-nav a:not(:first-child) {display: none;}
-  .top-nav a.icon {
+  #top-nav a:not(:first-child) {display: none;}
+  #top-nav a.icon {
     float: right;
     display: block;
   }
@@ -67,19 +73,20 @@ p {
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .top-nav.responsive {position: relative;}
-  .top-nav.responsive a.icon {
+  #top-nav.responsive {position: relative;}
+  #top-nav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .top-nav.responsive a {
+  #top-nav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
 }
 
+//---------------------------------------------------------------------------------------------------------------
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
@@ -95,8 +102,8 @@ p {
   margin-left: .75rem;
   }
 
-  /* Featurettes ------------------------- */
-
+//---------------------------------------------------------------------------------------------------------------
+/* Featurettes ------------------------- */
 .featurette-divider {
   margin: 2rem 0; /* Space out the Bootstrap <hr> more */
   width: 100%;
@@ -106,6 +113,7 @@ p {
   }
 }
 
+//---------------------------------------------------------------------------------------------------------------
 /* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
@@ -113,14 +121,28 @@ p {
   letter-spacing: -.05rem;
 }
 
-  /*footer section -------------------------*/
-  footer {
-    background-color: #b3b3b7;
-    color: $text-select-color;
-  }
+//---------------------------------------------------------------------------------------------------------------
+/*footer section -------------------------*/
+footer {
+  background-color: #b3b3b7;
+  color: $text-select-color;
+}
 
-  /*Chart styling*/
-  #production-chart, #consumption-chart{
-    width: 500px;
-    height: 300px;
-  }
+//---------------------------------------------------------------------------------------------------------------
+/*Chart styling*/
+#production-chart, #consumption-chart{
+  width: 500px;
+  height: 300px;
+}
+
+//---------------------------------------------------------------------------------------------------------------
+/*Contact styling*/
+.address {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.contact-form {
+  border-color: 1px #00001A;
+}
